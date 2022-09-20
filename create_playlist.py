@@ -183,8 +183,8 @@ def get_tracks_youtube(youtube):
             print(f'{item[0]}, Total: {len(titles)}: {titles}\n')
     total_titles = titles_un + titles_id
 
-    with open('searched.csv') as searched:
-        searched_reader = csv.reader(searched, delimiter=',')
+    with open('found.csv') as found:
+        searched_reader = csv.reader(found, delimiter=',')
         for line in searched_reader:
             SEARCHED_TITLES_LIST.append(line[0])
     for title in total_titles:
